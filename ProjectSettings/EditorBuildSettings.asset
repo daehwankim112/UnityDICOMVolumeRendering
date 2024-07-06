@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DICOM Volume Rendering/Scenes/Volume Rendering.unity
+    guid: 5dca0b90ae00218429124cd10a17682f
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c3bb55cd0d3d8a04bb952591cba9dbb7,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 35ff5a125babda04eb63e541b69fcd3a,
+      type: 2}
