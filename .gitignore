@@ -77,3 +77,4 @@ shadertoolsconfig.json
 Assets/DICOM\ Volume\ Rendering/Libs/*
 Assets/DICOM\ Volume\ Rendering/Data/*
 Wiki
+*.dcm
