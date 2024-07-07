@@ -27,6 +27,7 @@ CGINCLUDE
 struct appdata
 {
     float4 vertex : POSITION;
+    UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
 struct v2f
@@ -34,6 +35,8 @@ struct v2f
     float4 vertex   : SV_POSITION;
     float4 localPos : TEXCOORD0;
     float4 worldPos : TEXCOORD1;
+
+    UNITY_VERTEX_OUTPUT_STEREO
 };
 
 sampler3D _Volume;
@@ -75,6 +78,11 @@ inline float4 transferFunction(float t)
 v2f vert(appdata v)
 {
     v2f o;
+
+    UNITY_SETUP_INSTANCE_ID(v);
+    UNITY_INITIALIZE_OUTPUT(v2f, o);
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+
     o.vertex = UnityObjectToClipPos(v.vertex);
     o.localPos = v.vertex;
     o.worldPos = mul(unity_ObjectToWorld, v.vertex);
@@ -83,7 +91,9 @@ v2f vert(appdata v)
 
 float4 frag(v2f i) : SV_Target
 {
+    //float3 worldDir = mul(UNITY_MATRIX_V, i.worldPos).xyz;
     float3 worldDir = i.worldPos - _WorldSpaceCameraPos;
+    // float3 localDir = normalize(mul(unity_WorldToObject, float4(worldDir, 0)).xyz);
     float3 localDir = normalize(mul(unity_WorldToObject, worldDir));
 
     Ray ray;

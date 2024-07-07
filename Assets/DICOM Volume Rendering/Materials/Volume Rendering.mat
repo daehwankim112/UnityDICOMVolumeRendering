@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Volume Rendering
-  m_Shader: {fileID: 4800000, guid: c52f24502551d4cd7bd7f47a21746d17, type: 3}
+  m_Shader: {fileID: 4800000, guid: b0ec65d60c11a7d4b89f67217255dc33, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,12 +38,12 @@ Material:
     - _BlendSrc: 5
     - _Intensity: 0.058
     - _Iteration: 1000
-    - _MaxX: 1.0154669
+    - _MaxX: 0.9000001
     - _MaxY: 0.78499997
-    - _MaxZ: 1.1088002
-    - _MinX: 0.015466839
+    - _MaxZ: 1.1087987
+    - _MinX: 0.015466869
     - _MinY: 0.07653934
-    - _MinZ: -0.025999904
+    - _MinZ: -0.026001275
     - _RAY: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
