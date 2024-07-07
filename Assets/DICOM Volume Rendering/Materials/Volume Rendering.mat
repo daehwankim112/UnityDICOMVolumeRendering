@@ -39,11 +39,11 @@ Material:
     - _Intensity: 0.058
     - _Iteration: 1000
     - _MaxX: 0.9000001
-    - _MaxY: 0.78499997
-    - _MaxZ: 1.1087987
-    - _MinX: 0.015466869
+    - _MaxY: 0.7850001
+    - _MaxZ: 1.1087999
+    - _MinX: 0.015466899
     - _MinY: 0.07653934
-    - _MinZ: -0.026001275
+    - _MinZ: -0.026000082
     - _RAY: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
